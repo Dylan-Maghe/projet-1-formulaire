@@ -47,7 +47,7 @@
     }
     
 
-    print_r ($result['firstname'] . "<br>");
+    echo $result['firstname'] . "<br>";
 	echo $result['lastname'] . "<br>";
 	echo $result['email'] . "<br>";
     echo $result['country'] . "<br>";
