@@ -1,4 +1,24 @@
+<?php
 
+    /*if(isset($_POST["Submit"])) {
+        $firstname=trim($_POST["firstname"]);
+        $lastname=trim($_POST["lastname"]);
+        $email=trim($_POST["email"]);
+
+        if($firstname == "") {
+            $errorMsg= "error : Vous n'avez pas entrer de prénom";
+        }
+
+        if($lastname == "") {
+            $errorMsg= "error : Vous n'avez pas entrer de nom";
+        }
+
+        if($email == "") {
+            $errorMsg= "error : Vous n'avez pas entrer d'email";
+        }
+    }*/
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,9 +31,9 @@
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container form-container">
         <form action="user.php" method="post">
-        <img class="col-sm-12" src="hackers-poulette-logo.png" alt="logo hackerspoulette">
+        <img class="col-sm-12 form-img" src="hackers-poulette-logo.png" alt="logo hackerspoulette">
             <div class="row">
                 <div class="col-sm-6">
                     <label for="firstname">Prénom: </label>
@@ -71,12 +91,12 @@
             </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-12">
                     <label for="comment">Message:</label>
-                    <textarea class="form-control" name="message" rows="5" id="comment"></textarea>
+                    <textarea class="form-control form-message" name="message" rows="5" id="comment"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="btn btn-primary form-button">Envoyer</button>
         </form>
     </div>
     <!--<form action="user.php" method="post">
