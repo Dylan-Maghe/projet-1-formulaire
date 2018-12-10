@@ -12,7 +12,7 @@
 
 body {
     background-image:  radial-gradient(circle at left top, #fff,  #15c5bd);
-}
+    background-repeat: no-repeat;
 
 .form-button {
     margin-bottom: 20px;
@@ -23,6 +23,7 @@ body {
     height: 70%;
     width: 70%;
     margin-top: -100px;
+    
 }
 
 .form-img {

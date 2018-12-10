@@ -8,8 +8,12 @@
                               "flags"  => FILTER_FLAG_STRIP_HIGH,
                             ),
         "email" => FILTER_VALIDATE_EMAIL,
-        "country" => FILTER_SANITIZE_STRING,
-        "message" => FILTER_SANITIZE_STRING,
+        "country" => array ("filter" => FILTER_SANITIZE_STRING,
+                            "flags"  => FILTER_FLAG_STRIP_HIGH,
+                            ),
+        "message" => array ("filter" => FILTER_SANITIZE_STRING,
+                            "flags"  => FILTER_SANITIZE_STRING,
+                        ),
         "gender" => FILTER_SANITIZE_NUMBER_INT,
         "topic" => FILTER_SANITIZE_NUMBER_INT,
     );
@@ -149,7 +153,7 @@ $boundary = "-----=".md5(rand());*/
     
     //=====Définition du sujet.
     
-    $sujet = "Hey mon ami !";
+    $sujet = "Hello test !";
     
     //=========
     

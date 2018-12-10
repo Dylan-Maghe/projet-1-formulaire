@@ -1,22 +1,6 @@
 <?php
 
-    /*if(isset($_POST["Submit"])) {
-        $firstname=trim($_POST["firstname"]);
-        $lastname=trim($_POST["lastname"]);
-        $email=trim($_POST["email"]);
 
-        if($firstname == "") {
-            $errorMsg= "error : Vous n'avez pas entrer de prénom";
-        }
-
-        if($lastname == "") {
-            $errorMsg= "error : Vous n'avez pas entrer de nom";
-        }
-
-        if($email == "") {
-            $errorMsg= "error : Vous n'avez pas entrer d'email";
-        }
-    }*/
 
 ?>
 <!DOCTYPE html>
@@ -28,12 +12,12 @@
     <title>Hacker Poulette</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="container form-container">
         <form action="user.php" method="post">
-        <img class="col-sm-12 form-img" src="hackers-poulette-logo.png" alt="logo hackerspoulette">
+        <img class=" col-sm-12 form-img" src="hackers-poulette-logo.png" alt="logo hackerspoulette">
             <div class="row">
                 <div class="col-sm-6">
                     <label for="firstname">Prénom: </label>
@@ -99,52 +83,6 @@
             <button type="submit" class="btn btn-primary form-button">Envoyer</button>
         </form>
     </div>
-    <!--<form action="user.php" method="post">
-        <div class="form-hackers">
-            <label for="lastname">Nom: </label>
-            <input type="text" name="lastname" id="lastname" required>
-        </div>
-        <div class="form-hackers">
-            <label for="firstname">Prénom: </label>
-            <input type="text" name="firstname" id="firstname" required>
-        </div>
-        <div class="form-hackers">
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <div class="form-hackers">
-            <label for="country">Pays: </label>
-            <input type="text" name="country" id="country" required>
-        </div>
-        <fieldset required>
-            <legend>Genre</legend>
-            <input type="radio" name="gender" id="male" value="1" required> <label for="male">Homme</label>
-            <input type="radio" name="gender" id="female" value="2" required> <label for="female">Femme</label>
-        </fieldset>
-        <select name="topic">            
-            <option>Demande d'informations</option>
-            <option>Commander</option>
-            <option>Autres</option>
-        </select><br>
-        <div>
-            <label for="topic">Sujets: </label>
-            <input type="checkbox" name="topic[]" value="1">
-            <label for="informations">Demande d'informations<label>
-        </div>
-        <div>
-            <input type="checkbox" name="topic[]" value="2">
-            <label for="order">Commander<label>
-        </div>
-        <div>
-            <input type="checkbox" name="topic[]" value="3">
-            <label for="sell">Vendre des pièces<label>
-        </div>
-        <label for="message">Message: </label>
-        <div class="form-hackers">
-            <textarea rows="4" cols="50" name="message" required></textarea>
-        </div>
-        <input type="submit" name="submit" value="Envoyer">
-    </form>-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
